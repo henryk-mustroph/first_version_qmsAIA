@@ -1,0 +1,48 @@
+services:
+  api_gateway:
+    build:
+      context: .
+      dockerfile: api_gateway/Dockerfile
+    env_file:
+      - ./api_gateway/src/.env
+    ports:
+      - "4999:4999"
+    depends_on:
+      - rms_backend
+      - dmdgs_backend
+      - user_authentication_backend
+
+  rms_backend:
+    build:
+      context: .
+      dockerfile: rms_backend/Dockerfile
+    env_file:
+      - ./rms_backend/src/communication/database_connector/.env
+      - ./rms_backend/src/verification/setup_config/.env
+    ports:
+      - "5001:5001"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+  
+  dmdgs_backend:
+    build:
+      context: .
+      dockerfile: dmdgs_backend/Dockerfile
+    env_file:
+      - ./dmdgs_backend/src/communication/database_connector/.env
+    ports:
+      - "5002:5002"
+
+  user_authentication_backend:
+    build:
+      context: .
+      dockerfile: user_authentication_backend/Dockerfile
+    env_file:
+      - ./user_authentication_backend/src/communication/database_connector/.env
+    ports:
+      - "5003:5003"

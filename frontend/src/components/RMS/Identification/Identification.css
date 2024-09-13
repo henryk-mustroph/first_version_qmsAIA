@@ -1,0 +1,68 @@
+
+.page-description {
+    width: 1300px;
+    font-size: 1.0rem;
+}
+
+/* Dropdowns */
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+.dropdown-info {
+    width: 200px; /* Fixed width for the info container */
+    word-wrap: break-word; /* Allow automatic line breaks */
+    margin-right: 20px; /* Add margin between title/description and dropdown */
+}
+
+.dropdown-title,
+.dropdown-description {
+    margin: 0; /* Remove default margin */
+}
+
+.dropdown-title {
+    font-weight: bold; /* Make the title bold */
+}
+
+.dropdown-description {
+    font-size: 0.8rem;
+}
+
+.footer {
+    font-size: 0.6rem;
+    width: 750px;
+}
+
+/* Buttons */
+@media (max-width: 768px) {
+    .dropdown-container {
+        flex-basis: calc(100% - 20px); /* Full width on smaller screens */
+    }
+}
+
+.verif-stepper-buttons {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.verif-stepper-button-back,
+.verif-stepper-button-next {
+    font-weight: bold;
+    color: #0066CC; /* Blue title */
+    margin: 0 50px; /* Adjust the margin to increase the space between buttons */
+}
+
+@media (max-width: 768px) {
+    .verif-stepper-buttons {
+        flex-direction: column;
+        align-items: center; /* Center buttons vertically */
+    }
+
+    .verif-stepper-button-back,
+    .verif-stepper-button-next {
+        margin: 10px 0; /* Add margin between buttons vertically */
+    }
+}
+
