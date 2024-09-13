@@ -97,13 +97,14 @@ Your application will be available at http://localhost:3000/qmsAIA.
 ## Licence
 The licence is given in the main path of the project. 
 
-Corresponding paper:
-@misc{mustroph2024_qmsAIA_,
-      title={Design of a Quality Management System based on the EU Artificial Intelligence Act}, 
-      author={Henryk Mustroph and Stefanie Rinderle-Ma},
-      year={2024},
-      eprint={2408.04689},
-      archivePrefix={arXiv},
-      primaryClass={cs.SE},
-      url={https://arxiv.org/abs/2408.04689}, 
+Corresponding preprint:
+@article{mustroph2024design,
+  title={Design of a Quality Management System based on the EU Artificial Intelligence Act},
+  author={Mustroph, Henryk and Rinderle-Ma, Stefanie},
+  journal={arXiv preprint arXiv:2408.04689},
+  year={2024}
 }
+
+RMS_SERVICE_URL=http://127.0.0.1:5001
+DMDGS_SERVICE_URL=http://127.0.0.1:5002
+USER_AUTH_SERVICE_URL=http://127.0.0.1:5003

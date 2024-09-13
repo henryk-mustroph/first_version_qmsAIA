@@ -1,0 +1,37 @@
+.data-detail-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically and horizontally */
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    box-sizing: border-box; /* Ensure padding is included in total width/height */
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px; /* Adjust max-width as needed */
+    width: 100%;
+}
+
+.data-detail-title {
+    text-align: center;
+    margin-bottom: 20px; /* Reduced margin for better fitting */
+    font-weight: bold;
+    color: #0066CC;
+    font-size: 24px; /* Ensure the title is not too large */
+}
+
+.box-content {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1000px; /* Adjust max-width as needed */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 16px; /* Adjust padding as needed */
+}
