@@ -34,9 +34,10 @@ https://power.bpm.cit.tum.de/qmsAIA/
   - Replace `x.x.x.x`with a valid host.
 
 **Create `.env` file in  `dmdgs_backend/src/communication/database_connector`, `rms_backend/src/communication/database_connector` and `user_authentication_backend/src/communication/database_connector`**:
-    - Insert two lines into the `.env` file: ATLAS_URI, DB_NAME
+  - Insert two lines into the `.env` file: ATLAS_URI, DB_NAME
 
 #### Change host address in frontend files:
+  - Iterate through all forntend .js files and replace the host address with a valid address of your choice.
 
 The frontend and the backend contain docker container each:
 Navigate to: `/frontend` and `/backend` respectively and execute: 
