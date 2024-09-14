@@ -20,6 +20,25 @@ https://power.bpm.cit.tum.de/qmsAIA/
   - `rms_backend`
   - `user_authentication`
 
+## Database Setup
+
+1. **MongoDB Atlas**:
+   - Create an account on MongoDB Atlas [here](https://www.mongodb.com/cloud/atlas).
+   - Create a new cluster and get the connection string.
+   - Generate an API token for your application.
+   - Note the database name, as it will be required for configuration.
+
+## Verification Component in RMS
+
+1. **Hugging Face**:
+  - Make an account on Hugging Face [here](https://huggingface.co/settings/tokens).
+  - Get API token
+  - In the `./verification` directory of the RMS, when running the `main.py` file add your API token.
+
+2. **GPU Resources**:
+  - Use the formula provided in the paper to calculate the GPU VRAM to execute the technical metrics on a choosen LLM, for a batch size of one.
+  - Ensure that you have an NVIDIA GPU to run the technical assessments in the RMS.
+
 ## Building and running your application with Docker (self-deployment)
 
 ### Prerequisites
@@ -48,23 +67,6 @@ Navigate to: `/frontend` and `/backend` respectively and execute:
   - `docker compose up`
 
 Your application will be available at http://localhost:3000/qmsAIA.
-
-## Database Setup
-
-1. **MongoDB Atlas**:
-   - Create an account on MongoDB Atlas [here](https://www.mongodb.com/cloud/atlas).
-   - Create a new cluster and get the connection string.
-   - Generate an API token for your application.
-   - Note the database name, as it will be required for configuration.
-
-## Verification Component in RMS
-
-1. **Hugging Face**:
-  - Make an account on Hugging Face [here](https://huggingface.co/settings/tokens).
-  - Get API token
-  - In the `./verification` directory of the RMS, when running the `main.py` file add your API token.
-2. **GPU Resources**:
-  - Use the formula provided in the paper to calculate the GPU VRAM to execute the technical metrics on a choosen LLM, for a batch size of one.
   
 ## Licence
 The licence is given in the main path of the project: COPYING. 
