@@ -10,7 +10,7 @@ The first version prototype QMS according to Article 17 of the EU AIA incorporat
 
 https://power.bpm.cit.tum.de/qmsAIA/
 
-### Project Structure
+## Project Structure
 
 - **Main Path**: `first_version_qmsAIA`
 - **Frontend**: `frontend`
