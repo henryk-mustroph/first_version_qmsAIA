@@ -2,9 +2,9 @@
 
 ## Overview
 
-The prototype QMS is part of a research project and provides a proof-of-concept on how to build a SaaS web application that varifies and documents high-risk AI and GPAI systems according to the EU AIA regulations.
+The prototype QMS is part of a research project and provides a proof-of-concept on how to build a SaaS web application that varifies and documents high-risk AI and GPAI systems according to the AIA regulations.
 
-The first version prototype QMS according to Article 17 of the EU AIA incorporates a Risk Management System (Art. 9 EU AIA) and a Data Management and Governance System (Art. 10 EU AIA).
+The first version prototype QMS according to Article 17 of the EU AIA incorporates a Risk Management System (Art. 9 AIA) and a Data Management and Governance System (Art. 10 AIA).
 
 ## Access Prototype as Web Application:
 
@@ -18,7 +18,7 @@ https://power.bpm.cit.tum.de/qmsAIA/
   - `api_gateway`
   - `dmdgs_backend`
   - `rms_backend`
-  - `user_authentication`
+  - `user_authentication_backend`
 
 ## Database Setup
 
