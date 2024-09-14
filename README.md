@@ -36,6 +36,9 @@ https://power.bpm.cit.tum.de/qmsAIA/
 **Create `.env` file in  `dmdgs_backend/src/communication/database_connector`, `rms_backend/src/communication/database_connector` and `user_authentication_backend/src/communication/database_connector`**:
   - Insert two lines into the `.env` file: ATLAS_URI, DB_NAME
 
+**Add a .env file to `/backend/src/rms_backend/verification/setup_config`:**
+  - Insert one line into the `.env` file: ACCESS_TOKEN and add your Hugging Face access token.
+
 #### Change host address in frontend files:
   - Iterate through all forntend .js files and replace the host address with a valid address of your choice.
 

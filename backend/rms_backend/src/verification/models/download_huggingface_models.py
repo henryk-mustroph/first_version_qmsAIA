@@ -19,10 +19,15 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 import os
 
+from verification.setup_config.utils import login_to_huggingface
+
 
 def download_model(model_path, model_name):
     """Download a Hugging Face model and tokenizer to the specified directory"""
     try:
+        
+        login_to_huggingface()
+        
         # Check if the directory already exists
         if not os.path.exists(model_path):
             # Create the directory
